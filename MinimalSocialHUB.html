@@ -1,0 +1,91 @@
+<!-- Questo è un test per creare un mio sito personale -->
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Mio Sito Personale</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            padding: 20px;
+            background-color: #0073e6;
+            color: white;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            margin: 50px auto;
+            max-width: 600px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .button-container {
+            display: flex;    
+            flex-direction: column; /*Disposizione verticale dei button*/
+            justify-content: center;
+            gap: 15px; /*Spaziatura*/
+        }
+
+        .button-container a {
+            text-decoration: none;
+            padding: 10px 20px;
+            color: white;
+            background-color: #0073e6;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .button-container a:hover {
+            background-color: #005bb5;
+        }
+
+        @media (max-width: 600px) {
+        .button-container a {
+            width: 100%; /* Pulsanti più larghi sui dispositivi piccoli */
+            text-align: center;
+        }
+
+        main {
+            padding: 10px;
+        }
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Benvenuto nel mio sito!</h1>
+    </header>
+    <main>
+        <p>Ciao! Benvenuto nel mio sito! Qui puoi trovare i collegamenti ai miei profili social.</p>
+        <div class="button-container">
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            <a href="https://www.google.it" target="_blank">Esempio</a>
+
+        </div>
+    </main>
+</body>
+</html>
