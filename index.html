@@ -1,9 +1,10 @@
-<!-- Questo è un test per creare un mio sito personale -->
+<!-- Sito personale in cui caricherò i miei progetti, da modificare man mano-->
 <!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Il Mio Sito Personale</title>
     <style>
         body {
@@ -40,10 +41,22 @@
         }
 
         .button-container {
-            display: flex;    
-            flex-direction: column; /*Disposizione verticale dei button*/
+      
+            display: flex; /* Ogni button su una nuova riga */
+            flex-direction: column; /*button in verticale*/
             justify-content: center;
-            gap: 15px; /*Spaziatura*/
+            gap: 15px;
+            width: 90%; /* I button occupano il 90% della larghezza dello schermo */
+            max-width: 400px; /* Limite massimo di larghezza */
+            margin: 10px auto; /* Centrato e con margine */
+            padding: 10px;
+            font-size: 1rem;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
         }
 
         .button-container a {
@@ -61,15 +74,26 @@
         }
 
         @media (max-width: 600px) {
-        .button-container a {
-            width: 100%; /* Pulsanti più larghi sui dispositivi piccoli */
-            text-align: center;
+          .button-container a {
+            font-size:0.9rem;  /*Riduce il font per schermi piccoli*/
+            padding: 8px;      /*Riduce l'imbottitura*/
+          }
         }
 
+        @media (max-width: 480px){
+            .button-container a {
+                font-size: 0.8rem;
+                width: 100%;     /*Button a tutta larghezza su schermi molto piccoli*/
+            }
+        }
+        
         main {
             padding: 10px;
         }
-}
+
+
+        
+        
 
 
     </style>
@@ -81,9 +105,9 @@
     <main>
         <p>Ciao! Benvenuto nel mio sito! Qui puoi trovare i collegamenti ai miei profili social.</p>
         <div class="button-container">
-            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-            <a href="https://www.instagram.com" target="_blank">Instagram</a>
-            <a href="https://www.google.it" target="_blank">Esempio</a>
+            <a href="https://www.linkedin.com/in/giuseppe-cioffi-bab4a623b" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com/_giuseppe_cioffi/" target="_blank">Instagram</a>
+            <a href="https://github.com/Fumoso-dev" target="_blank">Github</a>
 
         </div>
     </main>
